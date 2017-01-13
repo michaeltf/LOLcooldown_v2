@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>-->
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+</head>
+<body ng-app="starter" ng-controller="MyCtrl" class="platform-android platform-cordova platform-webview">
+
+<ion-pane>
+  <ion-header-bar class="bar-positive">
+
+    <h1 class="title">Melody</h1>
+  </ion-header-bar>
+  <ion-content>
+    <button class="button button-assertive" ng-click="go('index.html')">
+      Melody
+    </button>
+    <img style="width:100vw;"
+         src="http://vignette3.wikia.nocookie.net/sanrio/images/9/9f/My_Melody.jpg/revision/latest?cb=20130402201755"/>
+    <img style="width:100vw;"
+         src="https://www.sanrio.com/media/W1siZiIsIjIwMTYvMDYvMTUvMjEvMzEvMDUvNTk3L2NoYXJhY3RlcnNfaGVhZGVyX2Jhbm5lcnNfaW1nX21tLnBuZyJdXQ/characters-header-banners-img-mm.png?sha=a04ecd74d46c70e6"/>
+    <img style="width:100vw;"
+         src="http://www.cartoon-clipart.co/amp/images/my-melody.png"/>
+    <img style="width:100vw;"
+         src="http://www.cartoon-clipart.co/amp/images/my-melody.png"/>
+    <img style="width:100vw;" src="http://wallpapercave.com/wp/EwhXRek.jpg"/>
+  </ion-content>
+</ion-pane>
+</body>
+</html>
