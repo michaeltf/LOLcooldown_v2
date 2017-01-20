@@ -1,7 +1,15 @@
 <ion-view title="Melody" id="page4">
   <ion-content padding="true" class="has-header">
-    <div>
-      {{myImages}}new
+
+  <div class="list">
+      <label class="item item-input">
+          <span class="input-label">Champions</span>
+          <input id="myInput" ng-keyup="filterFunction()" ng-model="myImg.nativeURL" placeholder="Search for names..">
+      </label>
+  </div>
+    <div id="myUL" ng-repeat="myImage in myImages | filter:myImg" style="display:inline;">
+        <!--<a href="templates/champion.html?cname={{myImage['name']}}"><img ng-src="{{myImage['nativeURL']}}" /></a>-->
+        <a ui-sref="doremon.champion({cname:'{{myImage['name']}}'})"><img width="24%" ng-src="{{myImage['nativeURL']}}" /></a>
     </div>
   </ion-content>
 </ion-view>

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/Michael/Documents/Files/Android/cooldown_lol-master/platforms/android/CordovaLib/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/Michael/Documents/Files/Android/cooldown_lol-master/platforms/android/CordovaLib/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\Others\android\LOLcooldown\CordovaLib\src\main\shaders"/></dataSet><dataSet config="debug"><source path="D:\Others\android\LOLcooldown\CordovaLib\src\debug\shaders"/></dataSet></merger>

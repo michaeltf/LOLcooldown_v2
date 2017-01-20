@@ -30,6 +30,17 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('doremon.champion',{
+      url: '/champion',
+      params: {cname:null},
+      views: {
+        'side-menu21': {
+          templateUrl: 'templates/champion.html',
+          controller: 'championCtrl'
+        }
+      }
+  })
+
   .state('doremon', {
     url: '/side-menu21',
     templateUrl: 'templates/doremon.html',
